@@ -1,3 +1,4 @@
+/* VARIABLES DE COLOR */
 :root {
   --red-primary: #e61919;
   --red-dark: #800000;
@@ -27,7 +28,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(10, 10, 10, 0.95);
+  background-color: var(--bg-header);
   border-bottom: 2px solid var(--red-primary);
   z-index: 1000;
 }
@@ -47,18 +48,19 @@ body {
   text-decoration: none;
 }
 
-/* LOGO SVG - TAMAÑO Y DEFINICIÓN */
-.logo-mp-svg {
-  height: 95px;
+/* LOGO INTEGRADO Y OPTIMIZADO */
+.logo-mp-img {
+  height: 120px;
   width: auto;
   display: block;
-  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.8));
-  transition: transform 0.2s ease, filter 0.2s ease;
+  mix-blend-mode: lighten;
+  clip-path: inset(15% 5% 15% 5%);
+  margin: -15px 0;
+  transition: transform 0.2s ease;
 }
 
-.logo-mp-svg:hover {
-  transform: scale(1.04);
-  filter: drop-shadow(0px 3px 8px rgba(230, 25, 25, 0.5));
+.logo-mp-img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -109,9 +111,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 120px 1.5rem 60px 1.5rem;
-  background-image: url('maquinas.jpeg');
+  background-image: url('images/maquinas.jpeg');
   background-size: cover;
-  background-position: center 45%;
+  background-position: center 48%;
   background-repeat: no-repeat;
   border-bottom: 3px solid var(--red-primary);
 }
@@ -328,7 +330,7 @@ body {
   border-radius: 4px;
 }
 
-/* FOOTER */
+/* FOOTER & REDES SOCIALES */
 .footer-site {
   background-color: var(--bg-header);
   border-top: 2px solid var(--red-primary);
@@ -354,6 +356,64 @@ body {
   font-family: sans-serif;
   color: var(--text-gray);
   font-size: 0.9rem;
+}
+
+.footer-action-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+/* COLORES ESPECÍFICOS DE REDES SOCIALES */
+.footer-social-links a.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.footer-social-links a.btn-instagram:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 39, 67, 0.4);
+}
+
+.footer-social-links a.btn-facebook {
+  background-color: #1877f2;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.footer-social-links a.btn-facebook:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+}
+
+.footer-social-links svg {
+  fill: #ffffff;
+  transition: fill 0.2s ease;
 }
 
 .btn-whatsapp-footer {
@@ -403,8 +463,10 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .logo-mp-svg {
-    height: 70px; /* Ajuste para pantallas móviles */
+  .logo-mp-img {
+    height: 85px;
+    clip-path: inset(15% 5% 15% 5%);
+    margin: -10px 0;
   }
 
   .mobile-menu-btn {
@@ -417,7 +479,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.98);
+    background-color: var(--bg-header);
     flex-direction: column;
     padding: 1.5rem;
     border-bottom: 2px solid var(--red-primary);
@@ -429,5 +491,10 @@ body {
 
   .hero-content h1 {
     font-size: 2.2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
