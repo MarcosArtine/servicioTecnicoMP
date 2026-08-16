@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.P Servicio Técnico | Bombas de Agua y Grupos Electrógenos 24 HS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand-logo">
+        <a href="#inicio" aria-label="M.P Servicio Técnico">
+          <!-- LOGO SVG REFINADO Y FIEL A LA IMAGEN -->
+          <svg class="logo-mp-svg" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(10, 5)">
+              <!-- ENGRANAJE EXTERIOR ROJO CON LLAVE MANTENIDA -->
+              <path fill="#e61919" d="
+                M 120,20 L 138,20 L 142,38 A 95,95 0 0,1 168,49 L 184,36 L 198,50 L 185,66 A 95,95 0 0,1 196,92 L 214,96 L 214,116 L 196,120 A 95,95 0 0,1 185,146 L 198,162 L 184,176 L 168,163 A 95,95 0 0,1 142,174 L 138,192 L 120,192 L 114,174 A 95,95 0 0,1 88,163 L 72,176 L 58,162 L 71,146 A 95,95 0 0,1 60,120 L 42,116 L 42,96 L 60,92 A 95,95 0 0,1 71,66 L 58,50 L 72,36 L 88,49 A 95,95 0 0,1 114,38 Z
+              "/>
+              
+              <!-- LÍNEA EXTENDIDA DE LA LLAVE FIJA INFERIOR -->
+              <path fill="#e61919" d="M 180,150 L 235,188 A 20,20 0 0,1 210,202 L 165,168 Z"/>
+
+              <!-- ANILLO INTERIOR NEGRO Y ARO BLANCO DE PRECISIÓN -->
+              <circle cx="128" cy="106" r="78" fill="#111111" stroke="#ffffff" stroke-width="6"/>
+
+              <!-- TEXTO M.P (M EN BLANCO, P EN ROJO CON BORDES DEFINIDOS) -->
+              <g transform="skewX(-14) translate(30, 0)">
+                <!-- M -->
+                <path fill="#ffffff" d="M 48,126 L 64,62 L 84,62 L 95,98 L 110,62 L 130,62 L 114,126 L 98,126 L 88,90 L 64,126 Z"/>
+                <!-- PUNTO CUA3DRADO BLANCO -->
+                <rect x="133" y="112" width="10" height="14" fill="#ffffff"/>
+                <!-- P -->
+                <path fill="#e61919" d="M 148,126 L 164,62 L 194,62 C 212,62 222,72 217,89 C 212,106 198,114 180,114 L 168,114 L 165,126 Z M 173,101 L 182,101 C 193,101 200,97 203,88 C 206,79 201,75 192,75 L 180,75 Z"/>
+              </g>
+
+              <!-- BANNER INFERIOR "SERVICIO TÉCNICO" CON BORDES REDONDEADOS Y TRAZO FIEL -->
+              <g transform="translate(15, 138)">
+                <rect x="0" y="0" width="235" height="34" rx="4" fill="#000000" stroke="#e61919" stroke-width="3"/>
+                <text x="117" y="24" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-style="italic" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="1">SERVICIO TÉCNICO</text>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <!-- BOTÓN MENÚ MÓVIL -->
+      <button class="mobile-menu-btn" aria-label="Abrir menú" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="https://wa.me/5491140293390?text=Hola,%20necesito%20asistencia%20técnica%20urgente" class="btn-nav-urgencia" target="_blank" rel="noopener">Atención 24hs</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="badge-urgencia">
+        <span class="pulse-red"></span> ATENCIÓN LAS 24 HS
+      </div>
+      <h1>M.<span>P</span> SERVICIO TÉCNICO</h1>
+      <h2>Especialistas en Bombas de Agua y Grupos Electrógenos</h2>
+      <p class="hero-subtitle">Soluciones rápidas y garantizadas en CABA y Gran Buenos Aires.</p>
+
+      <div class="hero-cta">
+        <a href="https://wa.me/5491140293390?text=Hola,%20necesito%20asistencia%20técnica%20urgente" class="btn-primary" target="_blank" rel="noopener">
+          PEDÍ ASISTENCIA
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section id="marcas" class="brands-bar">
+    <div class="brands-wrapper">
+      <span>ROWA</span> <span class="separator">•</span>
+      <span>GRUNDFOS</span> <span class="separator">•</span>
+      <span>PEDROLLO</span> <span class="separator">•</span>
+      <span>Y OTRAS MARCAS</span>
+    </div>
+  </section>
+
+  <!-- SERVICIOS CON ICONOS SVG Y BOTÓN DIRECTO -->
+  <section id="servicios" class="services-section">
+    <h3 class="section-title">NUESTROS <span>SERVICIOS</span></h3>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-icon-svg">
+          <svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1c.22.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z"/></svg>
+        </div>
+        <h4>Bombas Elevadoras e Inteligentes</h4>
+        <p>Mantenimiento preventivo, reparación de motores, bobinados y cambio de rodamientos.</p>
+        <a href="https://wa.me/5491140293390?text=Hola,%20necesito%20reparar%20una%20bomba%20de%20agua" class="card-btn" target="_blank" rel="noopener">Consultar por Bombas</a>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon-svg">
+          <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+        </div>
+        <h4>Grupos Electrógenos</h4>
+        <p>Reparación de generadores a gasolina y diésel, sistemas de arranque y tableros.</p>
+        <a href="https://wa.me/5491140293390?text=Hola,%20necesito%20servicio%20técnico%20para%20un%20grupo%20electrógeno" class="card-btn" target="_blank" rel="noopener">Consultar por Generadores</a>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon-svg">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        </div>
+        <h4>Urgencias 24 Horas</h4>
+        <p>Atención inmediata para consorcios, industrias y particulares ante cortes de agua o energía.</p>
+        <a href="https://wa.me/5491140293390?text=Hola,%20tengo%20una%20urgencia%20técnica" class="card-btn btn-urgent" target="_blank" rel="noopener">Solicitar Urgencia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section id="cobertura" class="coverage-section">
+    <div class="coverage-box">
+      <h3>ZONAS DE <span>COBERTURA</span></h3>
+      <p>Atención inmediata en las siguientes regiones:</p>
+      <ul>
+        <li><strong>Capital Federal</strong></li>
+        <li><strong>Zona Norte</strong></li>
+        <li><strong>Zona Sur</strong></li>
+        <li><strong>Zona Oeste</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="footer-site">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>M.<span>P</span> SERVICIO TÉCNICO</h2>
+        <p>Calidad, rapidez y garantía profesional en cada servicio.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://wa.me/5491140293390" class="btn-whatsapp-footer" target="_blank" rel="noopener">
+          💬 Pedir Asistencia 24 HS
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 M.P Servicio Técnico. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5491140293390?text=Hola,%20necesito%20asistencia%20técnica" class="floating-wa" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
