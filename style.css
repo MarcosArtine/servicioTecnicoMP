@@ -10,6 +10,15 @@
   --whatsapp-green: #25d366;
 }
 
+/* DESPLAZAMIENTO SUAVE Y COMPENSACIÓN DE NAVBAR FIJA */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 110px; /* Compensación para que el menú fijo no tape el título */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -512,6 +521,10 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 85px; /* Ajuste del margen para pantallas móviles */
+  }
+
   .nav-container {
     min-height: 74px;
     padding: 0.3rem 1rem;
