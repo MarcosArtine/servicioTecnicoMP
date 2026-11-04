@@ -61,7 +61,7 @@ body {
 
 /* LOGO INTEGRADO Y OPTIMIZADO */
 .logo-mp-img {
-  height: 170px;
+  height: 150px;
   width: auto;
   display: block;
   mix-blend-mode: screen;
@@ -573,7 +573,7 @@ body {
   }
 
   .logo-mp-img {
-    height: 120px;
+    height: 105px;
     clip-path: inset(15% 5% 15% 5%);
     margin: -8px 0;
   }
