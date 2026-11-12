@@ -103,10 +103,99 @@ h4 {
   color: var(--red-primary);
 }
 
-.btn-nav-urgencia {
+.nav-links a.btn-nav-urgencia {
   background-color: var(--red-primary);
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
+  color: var(--text-light);
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a.btn-nav-urgencia:hover {
+  background-color: var(--red-dark);
+  color: var(--text-light);
+}
+
+.nav-links a.btn-nav-urgencia:focus-visible {
+  color: var(--text-light);
+  outline: 2px solid var(--text-light);
+  outline-offset: 3px;
+}
+
+/* DESCRIPCIÓN SEO */
+.seo-text-section {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.seo-text-content {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #101010 100%);
+  border: 1px solid rgba(230, 25, 25, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+}
+
+.seo-text-content::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 110px;
+  height: 3px;
+  content: "";
+  background: var(--red-primary);
+  transform: translateX(-50%);
+}
+
+.seo-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--red-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.seo-text-content h2 {
+  max-width: 760px;
+  margin: 0 auto 1rem;
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.seo-text-content p {
+  max-width: 820px;
+  margin: 0 auto;
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+.seo-text-content strong {
+  color: var(--text-light);
+}
+
+.seo-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.6rem;
+}
+
+.seo-highlights span {
+  padding: 0.45rem 0.85rem;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(230, 25, 25, 0.12);
+  border: 1px solid rgba(230, 25, 25, 0.35);
+  border-radius: 999px;
 }
 
 /* MENÚ HAMBURGUESA MÓVIL */
