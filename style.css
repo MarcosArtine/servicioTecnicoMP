@@ -237,7 +237,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.68) 46%, rgba(10,10,10,0.94) 100%);
+  background: linear-gradient(180deg, rgba(10,10,10,0.68) 0%, rgba(10,10,10,0.54) 46%, rgba(10,10,10,0.84) 100%);
   z-index: 1;
 }
 
@@ -365,17 +365,10 @@ h4 {
 }
 
 .gallery-item img {
-  max-width: 100%;
-  height: auto;
-  max-height: 220px;
+  width: 100%;
+  height: 220px;
   object-fit: contain;
   display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.03);
-  filter: brightness(0.8);
 }
 
 .gallery-caption {
